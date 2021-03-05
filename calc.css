@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    padding: .5rem;
+    background-color: #efefef;
+}
+
+#main {
+    border-radius: 10px;
+    width: 160px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+}
+
+@media screen and (max-width: 400px) {
+    #main {
+        width: 100%;
+        height: 100vh;
+    }
+}
+
+.calculator-result {
+    width: 100%;
+    height: 60px;
+    overflow: hidden;
+}
+
+.calculator-input {
+    width: 100%;
+    height: 40px;
+    max-height: 40px;
+    font-size: 20px;
+    outline: none;
+    text-align: right;
+    padding: .5rem;
+    pointer-events: none;
+}
+
+.calculator-result {
+    display: block;
+    height: 15px;
+    font-size: .8rem;
+    outline: none;
+    text-align: right;
+    color: #0000005b;
+    margin-bottom: .25rem;
+}
+
+#calculator-buttons__component{
+    display: grid;
+    font-size: 16px;
+    width: 100%;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: repeat(5, 40px);
+    background-color: rgba(127, 255, 217, 0.089);
+}
+
+.calculator-buttons__numbers {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 33.33%);
+    grid-template-rows: repeat(5, 40px);
+}
+
+ion-icon {
+    color: #000000;
+    font-size: 21px;
+    --ionicon-stroke-width: 24px;
+    pointer-events: none;
+}
+
+.calculator-buttons__operators {
+    display: grid;
+    grid-template-columns: 40px;
+    grid-template-rows: repeat(5, 40px);
+}
+
+.calculator-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #000000a6;
+    border-radius: 7px;
+    outline: none;
+}
+
+.calculator-button:active {
+    transform: scale(.9);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.11), inset 0 2px 2px rgba(0, 0, 0, 0.11), inset 0 4px 4px rgba(0, 0, 0, 0.11);
+}
+
+.calculator-buttons__operators .calculator-button {
+    color: rgb(0, 156, 117);
+}

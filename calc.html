@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caclulator</title>
+    <link rel="stylesheet" href="./calc.css">
+</head>
+
+<body>
+    <main id="main">
+        <div id="calculator-result__component"></div>
+        <div id="calculator-buttons__component"></div>
+    </main>
+</body>
+<template id="calcInput">
+    <div class="calculator-input" contenteditable="true"></div>
+</template>
+<template id="calcResult">
+    <span class="calculator-result"></span>
+</template>
+<template id="calculatorButtonsNumbers">
+    <div class="calculator-buttons__numbers">
+        <div class="calculator-button" data-ops="clear">C</div>
+        <div class="calculator-button" data-ops='%'>&#x25;</div>
+        <div class="calculator-button" data-ops='backspace'>
+            <ion-icon name="backspace-outline"></ion-icon>
+        </div>
+        <div class="calculator-button" data-value='7'>7</div>
+        <div class="calculator-button" data-value='8'>8</div>
+        <div class="calculator-button" data-value='9'>9</div>
+        <div class="calculator-button" data-value='4'>4</div>
+        <div class="calculator-button" data-value='5'>5</div>
+        <div class="calculator-button" data-value='6'>6</div>
+        <div class="calculator-button" data-value='1'>1</div>
+        <div class="calculator-button" data-value='2'>2</div>
+        <div class="calculator-button" data-value='3'>3</div>
+        <div class="calculator-button" data-value='00'>00</div>
+        <div class="calculator-button" data-value='0'>0</div>
+        <div class="calculator-button" data-value='.'>&#x2219;</div>
+    </div>
+</template>
+<template id="calculatorButtonsOperators">
+    <div class="calculator-buttons__operators">
+        <div class="calculator-button" data-ops='&#xf7;'>&#xf7;</div>
+        <div class="calculator-button" data-ops='&#xd7;'>&#xd7;</div>
+        <div class="calculator-button" data-ops='&#x2212;'>&#x2212;</div>
+        <div class="calculator-button" data-ops='&#x2b;'>&#x2b;</div>
+        <div class="calculator-button" data-ops='return'>&#61;</div>
+    </div>
+</template>
+<!-- Allow importation of other js files  -->
+<script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
+<script src="./main.js" type="module"></script>
+
+</html>
